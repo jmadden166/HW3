@@ -18,8 +18,8 @@
   <tbody>
     <?php
 $servername = "localhost";
-$username = "Homework3";
-$password = "V~vK~YL!^O%F";
+$username = "jackstra_Homework3";
+$password = "+JMx3n7)k+!H";
 $dbname = "jackstra_Homework3";
 
 // Create connection
