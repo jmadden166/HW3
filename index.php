@@ -29,7 +29,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT ID, Name from instructor";
+$sql = "SELECT ID, Name from Instructor";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -37,8 +37,8 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["instructor_id"]?></td>
-    <td><a href="instructor-section.php?id=<?=$row["instructor_id"]?>"><?=$row["instructor_name"]?></a></td>
+    <td><?=$row["id"]?></td>
+    <td><a href="instructor-section.php?id=<?=$row["id"]?>"><?=$row["name"]?></a></td>
   </tr>
 <?php
   }
