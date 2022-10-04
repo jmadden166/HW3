@@ -35,10 +35,11 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-?>
+
   <tr>
     echo "id: " . $row["id"]. " - Name: " . $row["Name"]. " " . $row["Class"]. "<br>";
   </tr>
+   ?>
 <?php
   }
 } else {
