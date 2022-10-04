@@ -18,8 +18,8 @@
   <tbody>
     <?php
 $servername = "localhost";
-$username = "wp1";
-$password = "(0TwrRD@gUlB";
+$username = "Homework3";
+$password = "V~vK~YL!^O%F";
 $dbname = "jackstra_Homework3";
 
 // Create connection
