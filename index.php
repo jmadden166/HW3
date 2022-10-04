@@ -18,7 +18,7 @@
   <tbody>
     <?php
 $servername = "localhost";
-$username = "jackstra_Homework3";
+$username = "wp1";
 $password = "(0TwrRD@gUlB";
 $dbname = "jackstra_Homework3";
 
