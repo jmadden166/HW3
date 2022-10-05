@@ -37,7 +37,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 
   
-    echo "id: " . $row["id"]. " - Name: " . $row["Name"]. " " . $row["Class"]. $row["Number of Classes"]. "<br>";
+    echo "id: " . $row["ID"]. " - Name: " . $row["Name"]. " - Class: " . $row["Class"]. " - Number of Classes Taught: " .  $row["Number of Classes"]. "<br>";
  
    
   }
