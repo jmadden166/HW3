@@ -73,6 +73,12 @@ if ($result2->num_rows > 0) {
 $conn->close();
 ?>
   </card-group>
+  <label for="Class">Class:</label><br>
+  <input type="text" id="CName" name="CName"><br>    
+  <label for="Grade">GPA:</label><br>
+  <input type="text" id="GPA" name="GPA">
+  <input type="submit" value="Submit">
+</form>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
