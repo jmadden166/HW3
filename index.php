@@ -45,6 +45,29 @@ if ($result->num_rows > 0) {
 } else {
   echo "0 results";
 }
+  $sql2 = "SELECT * from Class";
+$result2 = $conn->query($sql);
+
+if ($result2->num_rows > 0) {
+  // output data of each row
+  while($row = $result2->fetch_assoc()) {
+    ?>
+     <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><?=$row["instructor_name"]?></h5>
+      <p class="card-text"><ul>
+<?php
+  
+    echo "Class ID: " . $row["ClassID"]. " - Class Name: " . $row["ClassName"]. " - Average Grade: " . $row["Average Grade"]. "<br>";
+   ?>
+         </ul></p>
+  </div>
+    </div>
+  <?php  
+  }
+} else {
+  echo "0 results";
+}
 $conn->close();
 ?>
   </card-group>
