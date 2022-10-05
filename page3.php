@@ -16,8 +16,8 @@ if ($conn->connect_error) {
 
   <?php  
  
-  $sql2 = "SELECT * from Class";
-$result2 = $conn->query($sql2);
+$sql1 = "select ClassID, ClassName, AverageGrade, I.ID, from Instructor I join Class C on I.ID = C.ID";
+$result2 = $conn->query($sql);
 
 if ($result2->num_rows > 0) {
   // output data of each row
@@ -29,7 +29,7 @@ if ($result2->num_rows > 0) {
       <p class="card-text"><ul>
 <?php
   
-    echo "<li>- Class ID: " . $row["ClassID"]. " - Class Name: " . $row["ClassName"]. " - Average Grade: " . $row["AverageGrade"]. "</li>";
+    echo "<li>- Class ID: " . $row["ClassID"]. " - Class Name: " . $row["ClassName"]. " - Teacher ID " . $row["I.ID"]. "</li>";
    ?>
       <br>
          </ul></p>
