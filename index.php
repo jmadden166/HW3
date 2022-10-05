@@ -35,8 +35,8 @@ if ($result->num_rows > 0) {
       <p class="card-text"><ul>
 <?php
   
-    echo  "<li>ID: " . $row["ID"]. " - Name: " . $row["Name"]. " - Class: " . $row["Class"]. " - Number of Classes Taught: " .  $row["Number of Classes"]. " "</li>";
-  
+    
+    echo "<li>" . $row["ID"]. " - Name: " . $row["Name"]. " - Class: " . $row["Class"]. " - Number of Classes Taught: " .  $row["Number of Classes"]. "</li>";
    ?>
          </ul></p>
   </div>
