@@ -25,7 +25,7 @@ if ($result2->num_rows > 0) {
     ?>
      <div class="card">
     <div class="card-body">
-      <h5 class="card-title"><?=$row["instructor_name"]?></h5>
+      <h5 class="card-title"><?=$row["ClassName"]?></h5>
       <p class="card-text"><ul>
 <?php
   
