@@ -29,7 +29,7 @@ if ($result2->num_rows > 0) {
       <p class="card-text"><ul>
 <?php
   
-    echo "<li>- Class ID: " . $row["ClassID"]. " - Class Name: " . $row["ClassName"]. " - Teacher ID " . $row["I.ID"]. "</li>";
+    echo "<li>- Class ID: " . $row["ClassID"]. " - Class Name: " . $row["ClassName"]. " - Teacher ID " . $row["ID"]. "</li>";
    ?>
       <br>
          </ul></p>
