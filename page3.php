@@ -17,7 +17,7 @@ if ($conn->connect_error) {
   <?php  
  
 $sql1 = "select ClassID, ClassName, AverageGrade, I.ID, from Instructor I join Class C on I.ID = C.ID";
-$result2 = $conn->query($sql);
+$result2 = $conn->query($sql1);
 
 if ($result2->num_rows > 0) {
   // output data of each row
