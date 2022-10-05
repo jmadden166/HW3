@@ -34,13 +34,8 @@ if ($result->num_rows > 0) {
       <h5 class="card-title"><?=$row["Name"]?></h5>
       <p class="card-text"><ul>
 <?php
-      <tr>
-     <td><?=$row["ID"]?></td>
-    <td><?=$row["Name"]?></td>
-    <td><?=$row["Class"]?></td>
-    <td><?=$row["Number of Classes"]?></td>
-   
-     </tr>
+      
+      
   
     
     echo "<li>-ID" . $row["ID"]. "</li><li>- Name: " . $row["Name"]. "</li><li>- Class: " . $row["Class"]. "</li><li>- Number of Classes Taught: " .  $row["Number of Classes"]. "</li>";
