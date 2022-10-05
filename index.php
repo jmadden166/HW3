@@ -50,6 +50,7 @@ if ($result->num_rows > 0) {
   echo "0 results";
 } ?>
 <?php include 'page3.php'; ?>
+    <?php include 'page4.php'; ?>
     <?php  
 $conn->close();
 ?>
