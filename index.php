@@ -34,8 +34,9 @@ if ($result->num_rows > 0) {
       <h5 class="card-title"><?=$row["instructor_name"]?></h5>
       <p class="card-text"><ul>
 <?php
-  
-    echo "id: " . $row["ID"]. " - Name: " . $row["Name"]. " - Class: " . $row["Class"]. " - Number of Classes Taught: " .  $row["Number of Classes"]. "<br>";
+  <br>
+    echo "id: " . $row["ID"]. " - Name: " . $row["Name"]. " - Class: " . $row["Class"]. " - Number of Classes Taught: " .  $row["Number of Classes"];
+    </br>
    ?>
          </ul></p>
   </div>
@@ -46,7 +47,7 @@ if ($result->num_rows > 0) {
   echo "0 results";
 }
   $sql2 = "SELECT * from Class";
-$result2 = $conn->query($sql);
+$result2 = $conn->query($sql2);
 
 if ($result2->num_rows > 0) {
   // output data of each row
