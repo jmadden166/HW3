@@ -16,12 +16,12 @@ if ($conn->connect_error) {
 
   <?php  
  
-$sql1 = "select StudentID, Name, from Student where GPA=" $_POST["1GPA"];
-$result2 = $conn->query($sql1);
+$sql5 = "select StudentID, Name, from Student where GPA= $_POST['1GPA']";
+$result5 = $conn->query($sql5);
 
-if ($result2->num_rows > 0) {
+if ($result5->num_rows > 0) {
   // output data of each row
-  while($row = $result2->fetch_assoc()) {
+  while($row = $result5->fetch_assoc()) {
     ?>
      <div class="card">
     <div class="card-body">
