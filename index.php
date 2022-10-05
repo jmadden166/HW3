@@ -50,7 +50,7 @@ if ($result->num_rows > 0) {
   echo "0 results";
 } ?>
 <?php include 'page3.php'; ?>
-    <?php include 'page4.php'; ?>
+    
     <?php  
 $conn->close();
 ?>
@@ -63,6 +63,7 @@ $conn->close();
   <input type="text" id="GPA" name="GPA">
   <input type="submit" value="Submit">
 </form>    
+   <a href="page5.php">Go to Page 2</a> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
