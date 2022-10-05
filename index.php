@@ -75,6 +75,7 @@ $conn->close();
 ?>
  
   </card-group>
+<form method="post" action="page2.php">
   <label for="Class">Class:</label><br>
   <input type="text" id="CName" name="CName"><br>    
   <label for="Grade">GPA:</label><br>
