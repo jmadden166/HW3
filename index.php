@@ -36,7 +36,7 @@ if ($result->num_rows > 0) {
 <?php
   
     
-    echo "<li>" . $row["ID"]. " - Name: " . $row["Name"]. " - Class: " . $row["Class"]. " - Number of Classes Taught: " .  $row["Number of Classes"]. "</li>";
+    echo "<li>" . $row["ID"]. "</li>- Name: " . $row["Name"]. " - Class: " . $row["Class"]. " - Number of Classes Taught: " .  $row["Number of Classes"]. "</li>";
    ?>
          </ul></p>
   </div>
