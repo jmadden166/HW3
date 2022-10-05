@@ -22,7 +22,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from Instructor";
+$sql = "SELECT * from Instructor i join class c on i.ID = c.ID";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -38,7 +38,7 @@ if ($result->num_rows > 0) {
       
   
     
-    echo "<li>-ID: " . $row["ID"]. "</li><li>- Name: " . $row["Name"]. "</li><li>- Class: " . $row["Class"]. "</li><li>- Number of Classes Taught: " .  $row["Number of Classes"]. "</li>";
+    echo "<li>-ID: " . $row["ID"]. "</li><li>- Name: " . $row["Name"]. "</li><li>- Class: " . $row["Class"]. "</li><li>- Number of Classes Taught: " .  $row["Number of Classes"]. "</li><li>- Class ID: " .  $row["C.ID"]. "</li>";
    ?>
          </ul></p>
   </div>
