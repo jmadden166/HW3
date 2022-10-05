@@ -41,6 +41,7 @@ if ($result->num_rows > 0) {
          </ul></p>
   </div>
     </div>
+    <br>
   <?php  
   }
 } else {
@@ -59,7 +60,7 @@ if ($result2->num_rows > 0) {
       <p class="card-text"><ul>
 <?php
   
-    echo "Class ID: " . $row["ClassID"]. " - Class Name: " . $row["ClassName"]. " - Average Grade: " . $row["Average Grade"]. "<br>";
+    echo "Class ID: " . $row["ClassID"]. " - Class Name: " . $row["ClassName"]. " - Average Grade: " . $row["AverageGrade"]. "<br>";
    ?>
          </ul></p>
   </div>
