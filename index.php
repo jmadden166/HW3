@@ -72,7 +72,9 @@ if ($result2->num_rows > 0) {
 }
 $conn->close();
 ?>
+  <p>
   <br>
+  </p>
   </card-group>
   <label for="Class">Class:</label><br>
   <input type="text" id="CName" name="CName"><br>    
