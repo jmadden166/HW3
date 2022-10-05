@@ -57,8 +57,8 @@ $conn->close();
  
   </card-group>
 <form method="post" action="page2.php">
-  <label for="Grade">GPA:</label><br>
-  <input type="text" id="GPA" name="GPA">
+  <label for="1GPA">GPA:</label><br>
+  <input type="text" id="1GPA" name="1GPA">
   <input type="submit" value="Submit">
 </form>    
    <a href="page5.php">Go to Page 2</a> 
