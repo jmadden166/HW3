@@ -16,12 +16,12 @@ if ($conn->connect_error) {
 
   <?php  
  
-$sql1 = "select StudentID, Name from Student where Name='Emily%'";
-$result2 = $conn->query($sql1);
+$sql3 = "select StudentID, Name from Student where Name='Emily Signal'";
+$result3 = $conn->query($sql3);
 
-if ($result2->num_rows > 0) {
+if ($result3->num_rows > 0) {
   // output data of each row
-  while($row = $result2->fetch_assoc()) {
+  while($row = $result3->fetch_assoc()) {
     ?>
      <div class="card">
     <div class="card-body">
