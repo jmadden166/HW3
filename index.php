@@ -8,7 +8,6 @@
 </head>
   <body>
     <h1>School Information</h1>
-    <h2>Teacher Information</h2>
 <div class="card-group">
     <?php
 $servername = "localhost";
@@ -42,7 +41,7 @@ if ($result->num_rows > 0) {
          </ul></p>
   </div>
     </div>
-   <h2>Teacher Information</h2>
+   
   <?php  
   }
 } else {
