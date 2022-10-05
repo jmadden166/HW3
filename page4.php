@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 
   <?php  
  
-$sql1 = "select StudentID, S.Name, FavoriteClassID, I.Name from Instructor I join Class C on I.ID = C.ID join Student S on C.ID = S.FavoriteClassID";
+$sql1 = "select StudentID, S.Name, FavoriteClassID, I.ID from Instructor I join Class C on I.ID = C.ID join Student S on C.ID = S.FavoriteClassID";
 $result2 = $conn->query($sql1);
 
 if ($result2->num_rows > 0) {
@@ -29,7 +29,7 @@ if ($result2->num_rows > 0) {
       <p class="card-text"><ul>
 <?php
   
-    echo "<li>- Student ID: " . $row["StudentID"]. " - Favorite Class ID: " . $row["Favorite Class ID"]. " - Teacher ID: " . $row["I.Name"]. "</li>";
+    echo "<li>- Student ID: " . $row["StudentID"]. " - Favorite Class ID: " . $row["FavoriteClassID"]. " - Favorite Teacher ID: " . $row["ID"]. "</li>";
    ?>
       <br>
          </ul></p>
