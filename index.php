@@ -62,6 +62,7 @@ if ($result2->num_rows > 0) {
   
     echo "Class ID: " . $row["ClassID"]. " - Class Name: " . $row["ClassName"]. " - Average Grade: " . $row["AverageGrade"]. "<br>";
    ?>
+      <br>
          </ul></p>
   </div>
     </div>
@@ -72,9 +73,7 @@ if ($result2->num_rows > 0) {
 }
 $conn->close();
 ?>
-  <p>
-  <br>
-  </p>
+ 
   </card-group>
   <label for="Class">Class:</label><br>
   <input type="text" id="CName" name="CName"><br>    
