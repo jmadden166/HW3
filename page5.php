@@ -9,5 +9,6 @@
     <body>
     <h1>School Information Page 2</h1>
 <?php include 'page4.php'; ?>
+      <?php include 'page6.php'; ?>
   </body>
   </html>
