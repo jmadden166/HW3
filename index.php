@@ -49,7 +49,7 @@ if ($result->num_rows > 0) {
 } else {
   echo "0 results";
 } ?>
-<?php include 'page3.php'; ?>
+
     
     <?php  
 $conn->close();
