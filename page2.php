@@ -15,8 +15,8 @@ if ($conn->connect_error) {
   ?>
 
   <?php  
- 
-$sql5 = "select StudentID, Name, from Student where GPA= $_POST['1GPA']";
+ $cid = $_POST['1GPA'];
+$sql5 = "select StudentID, Name, from Student where GPA=".$cid;
 $result5 = $conn->query($sql5);
 
 if ($result5->num_rows > 0) {
