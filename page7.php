@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 
   <?php  
  
-$sql3 = "select StudentID, Name from Student where Name='Emily Signal'";
+$sql3 = "select StudentID, Name from Student where ID = 3";
 $result3 = $conn->query($sql3);
 
 if ($result3->num_rows > 0) {
