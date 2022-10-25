@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 
   <?php  
  $cid = $_POST['1GPA'];
-$sql5 = "select StudentID, Name, from Student where GPA=".$cid;
+$sql5 = "select StudentID, Name, from Student where FavoriteClassID=".$cid;
 $result5 = $conn->query($sql5);
 
 if ($result5->num_rows > 0) {
@@ -29,7 +29,7 @@ if ($result5->num_rows > 0) {
       <p class="card-text"><ul>
 <?php
   
-    echo "<li>- Student ID: " . $row["StudentID"]. " - GPA: " . $row["GPA"]. "</li>";
+    echo "<li>- Student ID: " . $row["StudentID"]. " - GPA: " . $row["FavoriteClassID"]. "</li>";
    ?>
       <br>
          </ul></p>
